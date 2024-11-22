@@ -1,0 +1,20 @@
+l=[]
+contact={}
+while True:
+    a=int(input("Contact Book\n1.Add Contact.\n2.View Contacts.\n3.Search Contact\n4.Exit\nEnter your choice (1/2/3/4): "))
+    if(a==1):
+        b=input("Enter name: ").title()
+        c=int(input("Enter its number: "))
+        d=input("Enter E-mail: ")
+        contact[b]={'Number':c,'E-mail':d}
+        l.append(contact)
+    elif(a==2):
+        print(contact)
+    elif(a==3):
+        e=input("Enter name: ").title()
+        if(e in contact):
+            print(e,contact[e])
+        else:
+            print("This name is not in contact book!")
+    else:
+        break
