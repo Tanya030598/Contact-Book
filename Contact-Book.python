@@ -9,7 +9,7 @@ while True:
         z=contact[b]={'Number':c,'E-mail':d}
         l.append(z)
     elif(a==2):
-        print(l)
+        print(contact)
     elif(a==3):
         e=input("Enter name: ").title()
         if(e in contact):
